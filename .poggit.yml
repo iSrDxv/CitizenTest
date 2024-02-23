@@ -1,5 +1,5 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/NoobyPE/CitizenTest
-build-by-default: true
+build-by-default: false
 branches:
 - main
 projects:
@@ -9,5 +9,6 @@ projects:
       phpstan: false
     libs:
       - src: NoobyPE/CitizenLibrary/CitizenLibrary
+        branch: master
         version: ^2.2.1
 ...
