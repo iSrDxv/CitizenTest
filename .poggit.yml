@@ -5,4 +5,9 @@ branches:
 projects:
   CitizenTest:
     path: ""
+    lint: 
+      phpstan: false
+    libs:
+      - src: NoobyPE/CitizenLibrary/CitizenLibrary
+        version: ^2.2.1
 ...
