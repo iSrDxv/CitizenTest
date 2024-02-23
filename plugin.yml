@@ -1,4 +1,3 @@
----
 name: CitizenTest
 version: 0.0.1
 main: iSrDxv\CitizenTest\Main
@@ -16,4 +15,3 @@ permissions:
   npc.cmd:
     default: true
     description: Send NPC
-...
