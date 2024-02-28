@@ -1,7 +1,7 @@
 name: CitizenTest
 version: 0.0.1
 main: iSrDxv\CitizenTest\Main
-api: 5.10.0
+api: 5.0.0
 commands:
   npc:
     description: Example Command
