@@ -1,14 +1,14 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/NoobyPE/CitizenTest
-build-by-default: false
+build-by-default: true
 branches:
 - main
 projects:
   CitizenTest:
     path: ""
     lint: 
-      phpstan: false
+       phpstan: false
     libs:
-      - src: NoobyPE/CitizenLibrary/CitizenLibrary
-        branch: master
-        version: ^2.2.1
+       - src: NoobyPE/CitizenLibrary/CitizenLibrary
+         branch: master
+         version: ^2.2.1
 ...
