@@ -1,14 +1,11 @@
 name: CitizenTest
-version: 0.0.1
+version: 0.0.2
 main: iSrDxv\CitizenTest\Main
 api: 5.0.0
 commands:
   npc:
     description: Example Command
     usage: /npc
-    aliases:
-      - n
-      - citizen
     permission: npc.cmd
     permission-message: "You do not have permission to use this example command!"
 permissions:
