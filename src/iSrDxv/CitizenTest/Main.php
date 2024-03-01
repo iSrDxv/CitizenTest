@@ -35,6 +35,7 @@ class Main extends PluginBase
             $tagEditor->putLine("Players: " . count($this->getServer()->getOnlinePlayers()));
             $tagEditor->putLine("Click to join HardCore Factions");
             $factory->add($citizen);
+            $citizen->spawnTo($sender);
             $sender?->sendMessage("NPC Loaded");
             return true;
         }
