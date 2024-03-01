@@ -30,7 +30,7 @@ class Main extends PluginBase
             $citizen->setScale(2,5);
             $citizen->setSkin($sender->getSkin());
             $citizen->setPosition($sender->getPosition());
-            $citizen->setPitch($sender->getLocation->getPitch());
+            $citizen->setPitch($sender->getLocation()->getPitch());
             $citizen->setYaw($sender->getLocation()->getYaw());
             $citizen->spawnTo($sender);
             $tagEditor = $citizen->getTagEditor();
