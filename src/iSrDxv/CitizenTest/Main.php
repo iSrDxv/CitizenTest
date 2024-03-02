@@ -26,21 +26,20 @@ class Main extends PluginBase
     {
         if ($command->getName() === "npc") {
             $factory = $this->citizen->getFactory();
+
             $citizen = new Citizen();
-            $citizen->setScale(2,5);
+            $citizen->setScale(2.5);
             $citizen->setSkin($sender->getSkin());
-            $citizen->setPosition($sender->getPosition());
+            $citizen->setLocation($sender->getLocation());
             $citizen->setPitch($sender->getLocation()->getPitch());
             $citizen->setYaw($sender->getLocation()->getYaw());
-            $citizen->spawnTo($sender);
+
             $tagEditor = $citizen->getTagEditor();
             $tagEditor->putLine("HardCore Factions");
             $tagEditor->putLine("Players: " . count($this->getServer()->getOnlinePlayers()));
             $tagEditor->putLine("Click to join HardCore Factions");
-            foreach($tagEditor->getLines() as $line) {
-                $line->spawnTo($sender);
-            }
             $factory->add($citizen);
+            $citizen->spawnTo($sender);
             $sender?->sendMessage("NPC Loaded");
             return true;
         }
