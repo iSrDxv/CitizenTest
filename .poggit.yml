@@ -10,5 +10,5 @@ projects:
     libs:
        - src: NoobyPE/CitizenLibrary/CitizenLibrary
          branch: master
-         version: ^2.2.6
+         version: ^2.2.7s
 ...
