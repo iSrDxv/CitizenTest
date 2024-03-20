@@ -10,5 +10,5 @@ projects:
     libs:
        - src: NoobyPE/Citizen/Citizen
          branch: main
-         version: ^1.2.0-ALPHA
+         version: ^1.3.0-ALPHA
 ...
