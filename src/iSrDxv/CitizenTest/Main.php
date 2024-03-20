@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace iSrDxv\CitizenTest;
 
-use nooby\CitizenLibrary\CitizenLibrary;
-use nooby\CitizenLibrary\entity\Citizen;
+use nooby\citizen\CitizenLibrary;
+use nooby\citizen\entity\Citizen;
 
 use pocketmine\player\Player;
 use pocketmine\command\CommandSender;
@@ -27,12 +27,8 @@ class Main extends PluginBase
         if ($command->getName() === "npc") {
             $factory = $this->citizen->getFactory();
 
-            $citizen = new Citizen();
+            $citizen = Citizen::create($sender);
             $citizen->setScale(2.5);
-            $citizen->setSkin($sender->getSkin());
-            $citizen->setPosition($sender->getPosition());
-            $citizen->setPitch($sender->getLocation()->getPitch());
-            $citizen->setYaw($sender->getLocation()->getYaw());
 
             $tagEditor = $citizen->getTagEditor();
             $tagEditor->putLine("HardCore Factions");
