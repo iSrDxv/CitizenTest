@@ -9,6 +9,6 @@ projects:
        phpstan: false
     libs:
        - src: NoobyPE/Citizen/Citizen
-         branch: master
+         branch: main
          version: ^1.2.0-ALPHA
 ...
