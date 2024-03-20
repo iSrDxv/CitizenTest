@@ -13,4 +13,4 @@ $phar->startBuffering();
 $phar->buildFromDirectory(__DIR__);
 $phar->stopBuffering();
 
-echo "BedWars phar file has been built";
+echo "PocketMine-MP Plugin: phar file has been built";
