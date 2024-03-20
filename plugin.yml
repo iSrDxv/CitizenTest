@@ -1,5 +1,5 @@
 name: CitizenTest
-version: 1.2.1
+version: 1.2.2
 main: iSrDxv\CitizenTest\Main
 api: 5.0.0
 commands:
