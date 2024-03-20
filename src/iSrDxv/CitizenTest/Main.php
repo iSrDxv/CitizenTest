@@ -33,7 +33,7 @@ class Main extends PluginBase
             $tagEditor = $citizen->getTagEditor();
             $tagEditor->putLine("HardCore Factions");
             $tagEditor->putLine("Players: " . count($this->getServer()->getOnlinePlayers()));
-            $tagEditor->putLine("Click to join HardCore Factions");
+            $tagEditor->putLine("Click to join");
             
             $citizen->spawnTo($sender);
 
