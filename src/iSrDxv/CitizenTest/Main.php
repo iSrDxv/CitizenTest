@@ -28,7 +28,10 @@ class Main extends PluginBase
             $factory = $this->citizen->getFactory();
 
             $citizen = Citizen::create($sender);
-            $citizen->setScale(2.5);
+            $citizen->setScale(1.5);
+            $citizen->setNoClientPredictions(true);
+            //is a npc, bro
+            $citizen->setCanClimb(false);
 
             $tagEditor = $citizen->getTagEditor();
             $tagEditor->putLine("HardCore Factions");
