@@ -1,7 +1,7 @@
 --- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/NoobyPE/CitizenTest
 build-by-default: true
 branches:
-- main
+- patch-1
 projects:
   CitizenTest:
     path: ""
